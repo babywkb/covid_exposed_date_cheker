@@ -45,9 +45,9 @@ puppeteer.launch().then(async (browser) => {
     const exposures = compareDate.hashes.map((myHash) => {
       const matchInfo = hashInfos.find((info) => myHash === info.hash);
       if (matchInfo) {
-        return { 接触推定日: matchInfo.possibleDate, HASH値: myHash };
+        return { 接触候補日: matchInfo.possibleDate, HASH値: myHash };
       }
-      return { 接触推定日: " 一致データなし", HASH値: myHash };
+      return { 接触候補日: " 一致データなし", HASH値: myHash };
     });
     return {
       HASH突合日: compareDate.timestamp,
