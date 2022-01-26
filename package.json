@@ -1,0 +1,14 @@
+{
+  "name": "covid_exposed_date_cheker",
+  "version": "1.0.0",
+  "description": "covid exposed date check script",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "babywkb",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^9.1.1"
+  }
+}
